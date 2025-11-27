@@ -88,7 +88,7 @@ async def scheduler():
         await asyncio.sleep(2)
 
 # Запуск
-if name == "__main__":
+if __name__ == "__main__":
     loop = asyncio.get_event_loop()
     loop.create_task(scheduler())
     executor.start_polling(dp)
